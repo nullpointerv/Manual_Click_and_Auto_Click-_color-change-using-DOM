@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <input type='button' value="Click Here" id='button'>
+  <script>
+    let color=['aqua', 'black', 'blue', 'fuchsia', 'gray' , 'green', 'lime', 'maroon', 'navy', 'olive', 'purple', 'red', 'silver', 'teal', 'white',  'yellow' ];
+    let button=document.getElementById('button');
+    button.addEventListener('click',function(){  
+        let randomColor =color[Math.floor(Math.random()*color.length)];
+        document.body.style.background=randomColor;
+        // console.log(randomColor);
+    });
+
+  </script>
+</body>
+</html>
